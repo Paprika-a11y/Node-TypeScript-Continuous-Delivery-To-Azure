@@ -105,6 +105,14 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
+:: 4. Run gulp tasks
+echo Getting into the right direcetory for gulp
+pushd "%DEPLOYMENT_TARGET%"
+call :ExecuteCmd "gulp"
+IF !ERRORLEVEL! NEQ 0 goto error
+echo Gulp executed
+popd
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 goto end
 
