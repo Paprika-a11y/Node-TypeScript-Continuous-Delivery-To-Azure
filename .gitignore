@@ -8,7 +8,7 @@
 **/*/app
 
 # VS junk files, if added when adding ts
-**/*/scripts/**/*.js
+**/*/scripts/**/*.js*
 
 # VS stuff
 **/*/obj
