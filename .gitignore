@@ -1,0 +1,16 @@
+# npm packages
+**/*/node_modules
+
+# typings for intellisense support etc
+**/*/typings
+
+# Build-pipeline generated files
+**/*/app
+
+# VS junk files, if added when adding ts
+**/*/scripts/**/*.js
+
+# VS stuff
+**/*/obj
+**/*/bin
+**/*/.vs
